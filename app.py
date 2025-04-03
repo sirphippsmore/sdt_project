@@ -14,6 +14,8 @@ fig_hist = px.histogram(
     barmode='overlay'
 )
 
+fig_hist.update_xaxes(range=[0, 85000])
+
 fig_scatter = px.scatter(
     df, 
     x='type', 
